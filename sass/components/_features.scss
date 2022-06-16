@@ -1,9 +1,7 @@
 .features {
-    display: block;
   
 @media screen and (min-width:767px) {
     display: flex;
-    // flex-basis: 354px;
 }
 }
 
@@ -44,7 +42,7 @@
 
 .features-icons {
     display: flex;
-    width: 450px;
+    width: 100%;
     height: 120px;
     background-color: $BackgroundLight;
     border-radius: 4px;
