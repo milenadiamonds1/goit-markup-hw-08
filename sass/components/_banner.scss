@@ -1,0 +1,55 @@
+.banner {
+    margin: 0;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: $BackgroundDark;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ 
+}
+.banner__title {
+    color: $PrimaryLight;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    width: 360px;
+
+    @media screen and (min-width:767px){
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 42px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        width: 360px;
+        
+    }
+}
+
+.banner__button {
+    color: $PrimaryLight;
+    background-color: $AccentColor;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-family: $Roboto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 10px 32px;
+}

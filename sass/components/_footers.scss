@@ -1,0 +1,124 @@
+ .footer-second-list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin-bottom: 60px;
+ }
+
+ .footer-second {
+    //  display: flex;
+     flex-direction: column;
+    //  margin-left: 70px;
+ }
+
+ .container.footer {
+
+    display: block;
+   width: 100%;
+    
+    @media  screen and (min-width:768px) {
+        display: flex;
+    }
+     align-items: baseline;
+
+     @media screen and (max-width:480px){
+         width: 100%;
+     }
+ }
+
+ .footer-second__tittle {
+     text-transform: uppercase;
+     font-family: $Roboto;
+     font-size: 14px;
+     font-weight: 700;
+     line-height: 16px;
+     letter-spacing: 0.03em;
+     text-align: left;
+     color: $PrimaryLight;
+     margin: 0;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .footer-content {
+     background-color: $BackgroundDark;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+     padding-top: 60px;
+     padding-bottom: 60px;
+    // width: 480px;
+ }
+
+ .footer-list__link {
+     color: $TransparentLight;
+     text-decoration: none;
+     font-style: normal;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover,
+     &:focus {
+         color: $AccentColor;
+         fill: $AccentColor;
+     }
+ }
+
+ .footer-list__adress {
+     font-style: normal;
+     color: $PrimaryLight;
+     text-align: center;
+     margin-bottom: 8px;
+ }
+
+ .footer-list--margin {
+     text-align: center;
+
+    &:not(:last-child){
+        margin-bottom: 9px;
+    }
+    &:last-child{
+        margin-bottom: 60px;
+    }
+ }
+
+ .footer-content__logo {
+     padding: 0;
+ }
+
+ .address {
+     margin-top: 20px;
+ }
+
+ .footer-second-list__svg {
+     display: flex;
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     align-items: center;
+     justify-content: center;
+     color: $PrimaryLight;
+     background-color: $FooterDark;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .footer-second-list__item:not(:last-child) {
+     margin-right: 10px;
+ }
+
+ .footer-second-list__icon {
+     width: 20px;
+     height: 20px;
+     fill: currentColor;
+ }
+
+ .footer-second-list__svg:hover,
+ .footer-second-list__svg:focus {
+     background-color: $AccentColor;
+ }
+
+ .footer-form__icon {
+     fill: blue;
+     width: 24px;
+     height: 24px;
+     margin-left: 10px;
+ }

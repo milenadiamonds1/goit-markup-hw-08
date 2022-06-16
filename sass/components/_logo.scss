@@ -1,0 +1,38 @@
+.main-nav__logo {
+    color: $DarkColor;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    // padding-top: 24px;
+    // padding-bottom: 24px;
+    display: block;
+   padding-top: 16px;
+   padding-bottom: 16px;
+//    vertical-align: middle;
+}
+
+.footer-content__logo {
+    display: block;
+    color: $PrimaryLight;
+    text-decoration: none;
+    font-family: Raleway,
+        sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.main-nav__logo--world {
+    color: $AccentColor;
+}
+
+.footer-content__logo--world {
+    color: $AccentColor;
+}

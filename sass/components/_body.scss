@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $Roboto;
+    font-size: 14px;
+    margin: 0;
+ 
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.buttons-list,
+.products,
+.footer-list,
+.features,
+.photos-list,
+.team,
+.media-icons,
+.clients-list,
+.footer-second-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    // max-width:1200px;
+    // width: 100%;
+    @media screen and (max-width:480px) {
+    width: 100%;
+}
+    @media  screen and (min-width:480px){
+        width: 480px;
+    }
+    @media  screen and (min-width:768px){
+        width: 768px;
+    }
+    @media screen and (min-width:1200px){
+        width: 1200px;
+    }
+
+}
+
+.section.third {
+    padding-top: 0;
+}
+.section {
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.section:last-child {
+    // padding-bottom: 94px;
+
+    padding-bottom: 60px;
+}
+
+.section__title {
+    color: $DarkColor;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.section.people {
+    background-color: $BackgroundLight;
+    
+    @media screen and (min-width:767px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 1199.98px) {
+         width: 100%;
+        }
+      }
+
