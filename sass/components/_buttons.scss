@@ -41,12 +41,17 @@
 .buttons-list {
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
-} 
+    flex-wrap: wrap;
+
+    @media screen and (min-width:767px) {
+     justify-content: center;
+    }
+}
 
 .buttons-list__item {
-    display: flex;
+    // display: flex;
     margin-right: 8px;
+    margin-bottom: 15px;
 
     &:last-child {
         margin-right: 0;

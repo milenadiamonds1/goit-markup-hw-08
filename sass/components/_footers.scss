@@ -17,7 +17,7 @@
    width: 100%;
     
     @media  screen and (min-width:768px) {
-        display: flex;
+       
     }
      align-items: baseline;
 
@@ -122,3 +122,10 @@
      height: 24px;
      margin-left: 10px;
  }
+.footer__tablet{
+    @media screen and (min-width:767px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    }
+}

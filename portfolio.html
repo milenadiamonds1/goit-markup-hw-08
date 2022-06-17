@@ -12,30 +12,69 @@
 </head>
 <body>
     <header class="header-content">
-    <div class=" container main-nav">
-       <nav class="main-nav">
-       <a href="" class="main-nav__logo"><span class="main-nav__logo--world" >Web</span>Studio</a>
-<ul class="site-nav">
-    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
-    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current-button">Портфолио</a></li>
-    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-</ul>
-</nav>
-<ul class="contacts">
-    <li class="site-nav__item"><a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com
-        <svg class="contacts__mail-svg">
-            <use href="images/symbol-defs.svg#icon-envelope"></use>
+        <div class=" container main-navigation">
+           <nav class="main-nav">
+           <a href="" class="main-nav__logo"><span class="main-nav__logo--world" >Web</span>Studio</a>
+    <ul class="site-nav">
+        <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current-button">Портфолио</a></li>
+        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+    </ul>
+    
+    <button type = "button" 
+        class="header__button" 
+        aria-expanded ="false" 
+        aria-controls="menu-header"  
+        data-menu-button> 
+    
+        <svg class="header__button--icon" width='40px' height='40px' aria-label="Перемикач мобільного меню">
+            <use href= "images/sprite.svg#icon-menu_40px" class="header__menu"></use>
+            <use href= "images/sprite.svg#icon-close_40px" class="header__close"></use>
         </svg>
-        </a>
-    </li>
-    <li class="site-nav__item"><a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11
-        <svg class="contacts__phone-svg">
-            <use href="images/symbol-defs.svg#icon-smartphone"></use>
-        </svg>
-    </a></li>
-</ul>
-</div>
-</header>
+    </button>
+    <div class="menu-header" id="menu-header" data-menu>
+        <ul class="menu-header__list">
+            <li class="menu-header__item"><a href="./index.html" class="menu-header__link current-button">Студия</a></li>
+            <li class="menu-header__item"><a href="./portfolio.html" class="menu-header__link">Портфолио</a></li>
+            <li class="menu-header__item"><a href="" class="menu-header__link">Контакты</a></li>
+        </ul>
+    <ul class="menu-header__contacts">
+            <li class="menu-header__contact">
+                <a href="tel:+380961111111" class="menu-header__link">+38 096 111 11 11</a>
+            </li>
+            <li class="menu-header__contact">
+                <a href="mailto:info@devstudio.com" class="menu-header__link">info@devstudio.com</a>
+            </li>
+        </ul>
+    <ul class="menu-header__medias">
+        <li class="menu-header__social">
+            <a href="" class="menu-header__social-link">Instagram</a></li>
+        <li class="menu-header__social">
+            <a href="" class="menu-header__social-link"></a>Twitter</li>
+        <li class="menu-header__social">
+            <a href="" class="menu-header__social-link"></a>Facebook</li>
+        <li class="menu-header__social">
+            <a href="" class="menu-header__social-link"></a>Linkedn</li>
+    </ul>
+    </div>
+    </nav>
+    <ul class="contacts">
+        <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com
+            <svg class="contacts__mail-svg">
+                <use href="images/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            </a>
+        </li>
+        <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11
+            <svg class="contacts__phone-svg">
+                <use href="images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+        </a></li>
+    </ul>
+    </div>
+    
+    </div>
+    </header>
 <main>
       <section class="section">
     <div class="container">
@@ -54,7 +93,7 @@
                 <div class="products--overlay">
                     <p class="products__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
-          <img src="images/img(7).jpg" width="370"  height="294"  alt="notebook"></div>
+          <img src="images/img(7).jpg" class="products__img" width="370"  height="294"  alt="notebook"></div>
         <div class="products--border"><h2  class="products__name">Технокряк</h2>
     <p class="products__description">Веб-сайт</p></div>
         </a>  
@@ -66,7 +105,7 @@
                  <div class="products--overlay">
                      <p class="products__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
-          <img src="images/img(8).jpg" width="370"  height="294"  alt="basketbal"></div>
+          <img src="images/img(8).jpg" class="products__img" width="370"  height="294"  alt="basketbal"></div>
         <div class="products--border"><h2 class="products__name">Постер New Orlean vs Golden Star</h2>
     <p class="products__descriptionn">Дизайн</p></div>
         </a> 
@@ -78,7 +117,7 @@
                  <div class="products--overlay">
                      <p class="products__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
-          <img src="images/img(9).jpg"  width="370"  height="294"  alt="fish"></div>
+          <img src="images/img(9).jpg" class="products__img"  width="370"  height="294"  alt="fish"></div>
         <div class="products--border"><h2 class="products__name">Ресторан Seafood</h2>
     <p class="products__description">Приложение</p></div>
         </a> 
@@ -90,7 +129,7 @@
                  <div class="products--overlay">
                      <p class="products__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
-          <img src="images/img(10).jpg" width="370"  height="294"  alt="earpods"></div>
+          <img src="images/img(10).jpg" class="products__img" width="370"  height="294"  alt="earpods"></div>
         <div class="products--border"><h2 class="products__name">Проект Prime</h2>
     <p class="products__description">Маркетинг</p></div>
         </a> 
@@ -102,7 +141,7 @@
                  <div class="products--overlay">
                      <p class="products__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
-          <img src="images/img(11).jpg" width="370"  height="294"  alt="boxes"></div>
+          <img src="images/img(11).jpg" class="products__img" width="370"  height="294"  alt="boxes"></div>
         <div class="products--border"><h2 class="products__name">Проект Boxes</h2>
     <p class="products__description">Приложение</p></div>
         </a> 
@@ -114,7 +153,7 @@
                  <div class="products--overlay">
                      <p class="products__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
-          <img src="images/img(12).jpg" width="370"  height="294"   alt="computer"></div>
+          <img src="images/img(12).jpg" class="products__img" width="370"  height="294"   alt="computer"></div>
         <div class="products--border"><h2 class="products__name">Inspiration has no Borders</h2>
     <p class="products__description">Веб-сайт</p></div>
         </a> 
@@ -126,7 +165,7 @@
                  <div class="products--overlay">
                      <p class="products__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
-          <img src="images/img(13).jpg"  width="370"  height="294"  alt="book"></div>
+          <img src="images/img(13).jpg" class="products__img"  width="370"  height="294"  alt="book"></div>
         <div class="products--border"><h2 class="products__name">Издание Limited Edition</h2>
     <p class="products__description">Дизайн</p></div>
         </a> 
@@ -138,7 +177,7 @@
                  <div class="products--overlay">
                      <p class="products__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
-          <img src="images/img(14).jpg"  width="370"  height="294"  alt="slime"></div>
+          <img src="images/img(14).jpg" class="products__img"  width="370"  height="294"  alt="slime"></div>
         <div class="products--border"><h2 class="products__name">Проект LAB</h2>
     <p class="products__description">Маркетинг</p></div>
         </a> 
@@ -150,7 +189,7 @@
                  <div class="products--overlay">
                      <p class="products__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                  </div>
-          <img src="images/img(15).jpg"  width="370" height="294" alt="printing"></div>
+          <img src="images/img(15).jpg" class="products__img"  width="370" height="294" alt="printing"></div>
         <div class="products--border"><h2 class="products__name">Growing Business</h2>
     <p class="products__description">Приложение</p></div>
         </a> 
@@ -161,6 +200,7 @@
 </main>
 <footer class="footer-content">
     <div class="container footer">
+        <div class="footer__tablet">
         <div class="footer-first">
  <a href="" class="footer-content__logo"><span class="footer-content__logo--world" >Web</span>Studio</a>
 <address class="address">
@@ -198,7 +238,8 @@
                     </svg>
                     </a>
         </li>
-    </ul>
+    </ul> 
+ </div>
 </div>
 <div class="div-form">
  <form action="footer" class='footer-form'>
@@ -216,7 +257,8 @@
  </form>
  </div>
  </div>
-</footer>
+</footer> 
+<script src="./js/menu.js"></script> 
 </body>
 </html>
 

@@ -16,10 +16,15 @@
 .header__button.is-open .header__menu{
     display: none;
 }
+.header__button--icon{
+    &:hover,
+    &:focus{
+        fill: #2196f3;
+    }
+}
 
 .menu-header.is-open{
-
-    @media screen and (max-width:767px){
+    @media screen and (max-width:767.68px){
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -34,16 +39,13 @@
     left: 0;
     padding: 48px 40px;
     }
-        overflow: hidden;
+    overflow: hidden;
+@media screen and (min-width: 768px) {
+    display: none;
 }
-
+}
 .menu-header{
     display: none;
-
-    @media screen and (min-width:767px){
-        display: flex;
-        flex-grow: 1;
-    }
 }
 
 .menu-header__list,
@@ -84,7 +86,9 @@
     color: #2196f3;
 }
 .menu-header__social{
+    &:not(:last-child){
     border-right: 1px solid rgba(33,33,33,0.2);
+    }
     padding: 0 10px 0;
     &:first-child{
         padding-left: 0;
