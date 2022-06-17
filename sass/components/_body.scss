@@ -28,7 +28,10 @@ h5,
 h6 {
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .buttons-list,
 .products,
 .footer-list,
@@ -50,8 +53,8 @@ h6 {
     margin-right: auto;
     // max-width:1200px;
     // width: 100%;
-    @media screen and (max-width:480px) {
-    width: 100%;
+    @media screen and (min-width:480px) {
+    width: 480px;
 }
     // @media  screen and (min-width:480px){
     //     width: 480px;
