@@ -11,22 +11,41 @@
 </head>
 <body>
     <header class="header-content">
-    <div class=" container main-nav">
+    <div class=" container ">
        <nav class="main-nav">
        <a href="" class="main-nav__logo"><span class="main-nav__logo--world" >Web</span>Studio</a>
-<ul class="site-nav">
+<!-- <ul class="site-nav">
     <li class="site-nav__item"><a href="./index.html" class="site-nav__link current-button">Студия</a></li>
     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-</ul>
-<button type = "button" class="header__button is-open" aria-expanded ="false" aria-controls="menu-header" data-menu-button>
+</ul> -->
+<button type = "button" 
+    class="header__button" 
+    aria-expanded ="false" 
+    aria-controls="menu-header"  
+    data-menu-button> 
+
     <svg class="header__button--icon" width='40px' height='40px' aria-label="Перемикач мобільного меню">
         <use href= "images/sprite.svg#icon-menu_40px" class="header__menu"></use>
         <use href= "images/sprite.svg#icon-close_40px" class="header__close"></use>
     </svg>
 </button>
+<div class="menu-header" id="menu-header" data-menu>
+    <div class="menu-header__box">
+    <ul class="menu-header__list">
+        <li class="site-nav__item"><a href="./index.html" class="site-nav__link current-button">Студия</a></li>
+        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+    </ul>
+</div>
+<div class="menu-header__contacts">
+    <ul>
+        <li>kdopka</li>
+        <li>nsdkcnvlds</li>
+    </ul>
+</div>
 </nav>
-<ul class="contacts">
+<!-- <ul class="contacts">
     <li class="site-nav__item"><a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com
         <svg class="contacts__mail-svg">
             <use href="images/symbol-defs.svg#icon-envelope"></use>
@@ -38,24 +57,19 @@
             <use href="images/symbol-defs.svg#icon-smartphone"></use>
         </svg>
     </a></li>
-</ul>
+</ul> -->
 </div>
-<!-- <div class="menu-header is-open" id="menu-header" data-menu>
-    <ul class="menu-header__list">
-        <li class="menu-header__item">Студия</li>
-        <li class="menu-header__item">Портфолио</li>
-        <li class="menu-header__item">Контакты</li>
-    </ul>
-</div> -->
+
+</div>
 </header>
 <main>
-    <section class="banner">
+     <section class="banner">
         <div class="container">        
             <h1 class="banner__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" data-modal-open class="banner__button">Заказать услугу</button>
         </div>
-</section>
-    <section class="section">
+</section> 
+<section class="section">
         <div class="container">
    <h2 hidden>Преимущества</h2>
     <ul class="features">
@@ -98,7 +112,7 @@
    </ul>
    </div>
    </section>
-   <section class="section third">
+    <section class="section third">
        <div class="container">
    <h2 class="section__title">Чем мы занимаемся</h2>
    <ul class="photos-list"> 
@@ -236,7 +250,7 @@
          </ul>
     </div>
 </section>
-<section class="section our-clients">
+ <section class="section our-clients">
     <div class="container">
     <h2 class="section__title">Постоянные клиенты</h2>
     <ul class="clients-list">
@@ -402,7 +416,7 @@
 </div> 
 <div class="backdrop-phone is-hidden" data-modal></div>
  <script src="./js/modal.js"></script>
- <script src="./js/menu.js"></script>
+ <script src="./js/menu.js"></script> 
 </body>
 </html>
 

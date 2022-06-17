@@ -25,18 +25,11 @@
     margin: 0;
     color: $PrimaryMiddle;
     text-align: center;
-    
+    // margin-bottom: 30px;
 }
-
 .features__item {
-  
     &:not(:last-child) {
-        margin-right: 30px;
-        @media screen and(max-width:480px) {
-            margin-bottom: 30px;
-
-            margin-right: 0;
-        }
+        margin-bottom: 30px;
     }
 }
 
