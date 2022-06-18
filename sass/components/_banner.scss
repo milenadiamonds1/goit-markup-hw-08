@@ -27,7 +27,7 @@
     text-align: center;
     width: 100%;
 
-    @media screen and (min-width:767px){
+    @media screen and (min-width:767.98px){
         font-size: 26px;
         font-weight: 900;
         line-height: 42px;
@@ -36,6 +36,12 @@
         width: 360px;
         
     }
+    @media screen and (min-width:1199.99px) {
+        font-size: 44px;
+        width: 696px;
+        line-height: 1.36;
+    letter-spacing: 0.06em;
+}
 }
 
 .banner__button {

@@ -8,13 +8,27 @@
     justify-content: center;
     margin: -15px;
 
+    @media screen and (min-width:1199.99px){
+        flex-wrap: nowrap;
+        flex-basis: auto;
+        margin: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 .clients__item {
     // margin-right: 30px;
     // margin-bottom: 30px;
     margin: 15px;
-
+@media screen and (min-width:1199.99px) {
+    margin: 0 30px 0 0;
+    &:last-child{
+        margin-right: 0;
+    }
+    
+}
 
     // @media screen and (max-width:450px){
     //     margin-right: 0;
@@ -52,6 +66,10 @@
     &:focus {
         fill: $AccentColor;
         border-color: $AccentColor;
+    }
+    @media screen and (min-width:1199.99px) {
+        width: 170px;
+        
     }
 }
 

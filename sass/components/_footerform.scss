@@ -1,5 +1,8 @@
 .div-form {
     margin-left: auto;
+    @media screen and (min-width:1199.99px) {
+margin-left: 0;
+    }
 }
 
 .footer-form__icon {
@@ -41,6 +44,11 @@
     color: $PrimaryLight;
     margin-bottom: 20px;
     text-align: center;
+
+    @media screen and (min-width:1199.99px) {
+        text-align: left;
+        
+    }
 }
 
 .footer-form input {
@@ -69,12 +77,29 @@
     margin-right: auto;
     // margin-right: 12px;
     display: flex;
-}
-.footer-form label{
-    width: 100%;
+    @media screen and (min-width:1199.99px) {
+        width: 358px;
+        display: flex;
+        width: 358px;
+        margin-right: 10px;
+
+    }
 }
 
-// .footer-form__input {
-//     // display: flex;
-// }
+.footer-form label{
+
+    // width: 100%;
+
+}
+
+.footer-form{
+    @media screen and (min-width:1199.99px){
+    margin-left: 93px;
+}
+}
+.footer-form__input {
+    @media screen and (min-width:1199.99px){
+    display: flex;
+}
+}
 
