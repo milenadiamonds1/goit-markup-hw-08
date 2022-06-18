@@ -37,7 +37,6 @@
 }
 
 .products__item {
-    margin-right: 30px;
     // width: calc((100% - 60px)/3);
     margin-bottom: 30px;
     display: block;
@@ -49,6 +48,7 @@
     @media  screen and (min-width:767px) {
         max-width: 354px;
         width: 100%;
+        margin-right: 30px;
         &:nth-child(2n){
             margin-right: 0;
         }

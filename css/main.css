@@ -1245,7 +1245,6 @@ a {
 }
 
 .products__item {
-  margin-right: 30px;
   margin-bottom: 30px;
   display: block;
 }
@@ -1261,6 +1260,7 @@ a {
   .products__item {
     max-width: 354px;
     width: 100%;
+    margin-right: 30px;
   }
   .products__item:nth-child(2n) {
     margin-right: 0;
