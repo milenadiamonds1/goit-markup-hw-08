@@ -3,6 +3,9 @@
      flex-wrap: wrap;
      justify-content: center;
      margin-bottom: 60px;
+     @media screen and (min-width:1199.99px){
+        margin-bottom: 0;
+    }
  }
 
  .footer-second {
@@ -91,6 +94,11 @@
     &:last-child{
         margin-bottom: 60px;
     }
+    @media screen and (min-width:1199.99px){
+        &:last-child{
+        margin-bottom: 0;
+        }
+    }
  }
 
  .footer-content__logo {
@@ -99,6 +107,9 @@
 
  .address {
      margin-top: 20px;
+     @media screen and (min-width:1199.99px){
+        margin-top: 0;
+    }
  }
 
  .footer-second-list__svg {

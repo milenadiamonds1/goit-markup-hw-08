@@ -133,11 +133,32 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2F303A;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/header@2x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/header@2x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media not all, (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/headerphone@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/headerphone@2x.jpg);
+  }
+}
+
+@media not all, screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/headertablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/headertablet@2x.jpg);
+  }
+}
+
+@media not all, screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/header@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/header@2x.jpg);
+  }
 }
 
 .banner__title {
@@ -623,6 +644,12 @@ a {
 }
 
 @media screen and (min-width: 1199.99px) {
+  .footer-second-list {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1199.99px) {
   .footer-second {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -726,12 +753,24 @@ a {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1199.99px) {
+  .footer-list--margin:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .footer-content__logo {
   padding: 0;
 }
 
 .address {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1199.99px) {
+  .address {
+    margin-top: 0;
+  }
 }
 
 .footer-second-list__svg {
@@ -1071,6 +1110,7 @@ a {
 @media screen and (min-width: 1199.99px) {
   .footer-content__logo {
     text-align: left;
+    padding-top: 0;
   }
 }
 
@@ -1372,6 +1412,14 @@ a {
   }
 }
 
+@media screen and (min-width: 1199.99px) {
+  .products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .products--border {
   border: 1px solid #EEEEEE;
   border-top: 0;
@@ -1432,6 +1480,18 @@ a {
     margin-right: 0;
   }
   .products__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products__item:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .products__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .products__item:nth-last-child(-n+3) {
     margin-bottom: 0;
   }
 }
