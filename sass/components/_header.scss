@@ -83,6 +83,10 @@
     border-radius: 2px;
     position: absolute;
     bottom: 0;
+
+    @media screen and (max-width:767px){
+        display: none;
+    }
 }
 .contacts{
     display: flex;
@@ -171,6 +175,7 @@
 
     @media  screen and (min-width:1199.98px) {
         margin-right: 50px;
+        margin-bottom: 0;
         &:last-child{
             margin-right: 0;
         }

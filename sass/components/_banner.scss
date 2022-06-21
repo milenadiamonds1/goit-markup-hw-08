@@ -22,6 +22,11 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/header/header@2x.jpg);
     }
+    @media screen and (max-width:1199.99px){
+        padding-top: 118px;
+        padding-bottom: 118px;
+        
+    }
 }
 .banner__title {
     color: $PrimaryLight;

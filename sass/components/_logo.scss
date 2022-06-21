@@ -25,12 +25,13 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    // padding-top: 24px;
+    // padding-bottom: 24px;
     text-align: center;
     @media screen and (min-width:1199.99px){
         text-align:left ;
         padding-top: 0;
+        margin-bottom: 20px;
     }
 
 }
