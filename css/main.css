@@ -325,6 +325,14 @@ a {
   }
 }
 
+@media screen and (max-width: 767.99px) {
+  .clients-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .clients__item {
   margin: 15px;
   -ms-flex-preferred-size: calc((100% - 90px) / 3);
